@@ -16,6 +16,10 @@ app.use(cors());
 app.use(express.static('dist'));
 // Spin up the server
 const port = 5000;
+const server = app.listen(port,()=>{
+  console.log('server running');
+   console.log(`running on localhost:${port}`)
+});
 
 app.get('/',function(req,res){
   res.sendFile('dist/index.html')
