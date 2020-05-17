@@ -35,7 +35,7 @@ module.exports = {
             filename: "./index.html"
         }),
         new CleanWebpackPlugin({
-            dry: true,
+            dry: false,
             verbose: true,
             cleanStaleWebpackAssets: true,
             protectWebpackAssets: false
